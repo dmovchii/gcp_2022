@@ -1,0 +1,6 @@
+#!/bin/bash
+
+apt-get update && apt-get upgrade
+apt list --installed > packages_list
+apt install git
+git clone https://git.savannah.gnu.org/git/grep.git && ls -R grep > repo_content
